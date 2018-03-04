@@ -8,6 +8,9 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.12.3"
 
 libraryDependencies += guice
+libraryDependencies += "io.kamon" %% "kamon-core" % "1.1.0"
+libraryDependencies += "io.kamon" %% "kamon-play-2.6" % "1.0.2"
+libraryDependencies += "io.kamon" %% "kamon-logback" % "1.0.0"
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 
 // Adds additional packages into Twirl
